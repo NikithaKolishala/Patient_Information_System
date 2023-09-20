@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3307/PatientInformation</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">nikitha77</property>
+        <property name="hbm2ddl.auto">update</property>
+        
+      <mapping class="nikitha.com.Login"/>
+      <mapping class="nikitha.com.Patient"/>
+      <mapping class="nikitha.com.Doctor"/>
+      <mapping class="nikitha.com.Appointment"/>
+      <mapping class="nikitha.com.Diagnosis"/>
+      <mapping class="nikitha.com.Billing"/>
+    </session-factory>
+</hibernate-configuration>
